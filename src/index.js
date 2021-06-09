@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Weather from './components/WeatherContainer';
 
 import store from './store/weather';
 import { Provider } from 'react-redux';
 
 
-
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Weather />
   </Provider>,
   document.getElementById('root')
 );
