@@ -9,7 +9,6 @@ const weatherSlice = createSlice({
     reducers: {
         setWeather(state, action){
             state.weather = action.payload;
-            console.log(state.weather);
         },
         setCity(state , action){
             state.city = action.payload;
