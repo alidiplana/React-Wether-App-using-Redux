@@ -57,7 +57,7 @@
   left: 10px;
   font-size: 1.4rem;
 }
-.display-weather .weather-details {
+/* .display-weather .weather-details {
   margin-left: 50px;
   margin-right: 50px;
 
@@ -80,7 +80,7 @@ h4 {
 
 .display-weather .weather-details span {
   font-size: 1.2rem;
-}
+} */
 
 .temperature-container{
   text-align: center;
