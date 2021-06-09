@@ -16,7 +16,7 @@ function WeatherInput({getWeatherData}) {
         <button className="submit" 
         onClick={() => getWeatherData(city)}
         >
-          Submi
+          Submit
         </button>
     </Fragment>
   );
