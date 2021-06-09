@@ -17,15 +17,12 @@
 .weather form input {
   padding: 10px;
   border: none;
-  /* border-bottom: 2px dashed rgb(2, 57, 88); */
   margin-right: 10px;
 }
 
 .weather form input:focus {
   outline: none;
 }
-
-
 
 .weather .submit:focus {
   outline: none;

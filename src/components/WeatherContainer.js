@@ -2,9 +2,9 @@ import { useSelector } from "react-redux";
 import { weatherAction } from "../store/weather";
 import { useDispatch } from "react-redux";
 
-import DisplayWeather from "./DisplayWeather";
-import "./weatherContainer.css";
+import WeatherDetail from "./WeatherDetail";
 import WeatherInput from "./WeatherInput";
+import "./weatherContainer.css";
 
 const API_KEY = "72286ce12d54b7b4c80ee1f25861e9a1";
 
@@ -31,7 +31,7 @@ function Weather() {
 
       {weather ? (
         <div>
-          <DisplayWeather data={weather} />
+          <WeatherDetail data={weather} />
         </div>
       ) : null}
     </div>

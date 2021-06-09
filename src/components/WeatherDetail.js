@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import './displayWeather.css';
-function DisplayWeather(props) {
+import './weatherDetail.css';
+function WeatherDetail(props) {
   
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const day = new Date();
@@ -127,4 +127,4 @@ function DisplayWeather(props) {
   );
 }
 
-export default DisplayWeather;
+export default WeatherDetail;
