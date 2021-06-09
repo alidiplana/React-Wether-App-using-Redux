@@ -1,6 +1,5 @@
 .weather {
   margin-top: 20px;
-  /* border: 3px dashed grey; */
   border-radius: 20px;
   padding-bottom: 30px;
   width: max-content;
@@ -24,14 +23,9 @@
 
 .weather form input:focus {
   outline: none;
-  /* border-bottom: 3px dashed rgb(2, 57, 88); */
 }
 
 
-/* .weather .submit:hover {
-  background: transparent;
-  color: black;
-} */
 
 .weather .submit:focus {
   outline: none;
