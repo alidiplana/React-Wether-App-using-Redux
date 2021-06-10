@@ -1,7 +1,8 @@
 import { Fragment } from "react";
 import React, { useState } from "react";
 import './weatherInput.css';
-function WeatherInput({getWeatherData}) {
+
+const WeatherInput = ({getWeatherData}: any) => {
   const [city, setCity] = useState('');
 
   return (
