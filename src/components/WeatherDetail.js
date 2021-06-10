@@ -38,7 +38,8 @@ function WeatherDetail(props) {
             {/* <span className="weather-main">{data.weather[0].main}</span> */}
             <img className="weather-icon" src={iconURL} alt="" srcSet="" />
           </div>
-          <h4>High/Low</h4>
+         <div className="flex-container">
+         <h4>High/Low</h4>
           {Math.floor(data.main.temp_max - 273.15)}/
           {Math.floor(data.main.temp_min - 273.15)}
           <h4>Humidity</h4>
@@ -60,6 +61,7 @@ function WeatherDetail(props) {
           {new Date(data.sys.sunset * 1000).toLocaleTimeString()}
 
 
+         </div>
 
         </Fragment>
       ) : (
