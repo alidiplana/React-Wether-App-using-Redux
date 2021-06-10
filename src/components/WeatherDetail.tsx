@@ -60,7 +60,6 @@ const WeatherDetail = (props: any) => {
               {Math.floor(data.main.temp - 273.15)}
               <sup>o</sup>
             </h1>
-            {/* <span className="weather-main">{data.weather[0].main}</span> */}
             <img className="weather-icon" src={iconURL} alt="" srcSet="" />
           </div>
           <div className="flex-container">
