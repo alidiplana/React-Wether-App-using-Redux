@@ -23,7 +23,7 @@ type Prop = {
   };
 };
 
-const WeatherDetail = (props: Prop) => {
+const WeatherDetail = (props: any) => {
   const days: String[] = [
     "Sunday",
     "Monday",
@@ -41,6 +41,7 @@ const WeatherDetail = (props: Prop) => {
     "http://openweathermap.org/img/wn/" +
     `${data.cod !== 404 ? data.weather[0].icon : null}` +
     ".png";
+
   return (
     <div className="display-weather">
       {data.cod !== 404 ? (
@@ -63,26 +64,42 @@ const WeatherDetail = (props: Prop) => {
             <img className="weather-icon" src={iconURL} alt="" srcSet="" />
           </div>
           <div className="flex-container">
-            <h4>High/Low</h4>
-            {Math.floor(data.main.temp_max - 273.15)}/
-            {Math.floor(data.main.temp_min - 273.15)}
-            <h4>Humidity</h4>
-            <span>{data.main.humidity} %</span>
-            <h4>Pressure</h4>
-            <span>{data.main.pressure} hPa</span>
-            <h4>Visibility</h4>
-            <span>{data.visibility / 1000} Km</span>
-            <h4>Wind</h4>
-            <span>{Math.floor((data.wind.speed * 18) / 5)} km/hr</span>
-            <h4>Wind Direction</h4>
-            <span>
-              {data.wind.deg}
-              <sup>o</sup> deg
-            </span>
-            <h4>Sunrise</h4>
-            {new Date(data.sys.sunrise * 1000).toLocaleTimeString()}
-            <h4>Sunset</h4>
-            {new Date(data.sys.sunset * 1000).toLocaleTimeString()}
+            <div className="box-high-low">
+              <h4>High/Low</h4>
+              {Math.floor(data.main.temp_max - 273.15)}/
+              {Math.floor(data.main.temp_min - 273.15)}
+            </div>
+            <div className="box-humidity">
+              <h4>Humidity</h4>
+              <span>{data.main.humidity} %</span>
+            </div>
+            <div className="box-pressure">
+              <h4>Pressure</h4>
+              <span>{data.main.pressure} hPa</span>
+            </div>
+            <div className="box-visibility">
+              <h4>Visibility</h4>
+              <span>{data.visibility / 1000} Km</span>
+            </div>
+            <div className="box-wind">
+              <h4>Wind</h4>
+              <span>{Math.floor((data.wind.speed * 18) / 5)} km/hr</span>
+            </div>
+            <div className="box-wind-direction">
+              <h4>Wind Direction</h4>
+              <span>
+                {data.wind.deg}
+                <sup>o</sup> deg
+              </span>
+            </div>
+            <div className="box-sunrise">
+              <h4>Sunrise</h4>
+              {new Date(data.sys.sunrise * 1000).toLocaleTimeString()}
+            </div>
+            <div className="box-sunset">
+              <h4>Sunset</h4>
+              {new Date(data.sys.sunset * 1000).toLocaleTimeString()}
+            </div>
           </div>
         </Fragment>
       ) : (

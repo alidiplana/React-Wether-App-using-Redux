@@ -1,10 +1,35 @@
 .weather .submit {
-    margin-left: 10px;
-    padding: 8px;
-    border: none;
-    border-radius: 20px;
-    background: #24A0ED;
-    cursor: pointer;
-    color: whitesmoke;
-  }
-  
+  margin-left: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  background: #24a0ed;
+  cursor: pointer;
+  color: whitesmoke;
+}
+.searchTerm {
+  width: 80%;
+  border: 1px solid #00b4cc;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.searchButton {
+  /* width: 40px; */
+  height: 33px;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}

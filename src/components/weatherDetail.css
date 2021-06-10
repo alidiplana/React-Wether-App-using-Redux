@@ -62,3 +62,12 @@
   text-align: center;
 }
 
+.flex-container {
+  display: flex;
+}
+
+.flex-container div {
+  width: 50%;
+  margin: 10px;
+  justify-content: space-between;
+}

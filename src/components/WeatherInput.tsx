@@ -7,14 +7,14 @@ const WeatherInput = ({getWeatherData}: any) => {
 
   return (
     <Fragment>
-        <input
+        <input className="searchTerm"
           type="text"
           placeholder="Enter City"
           name="city"
           onChange={(e) => setCity(e.target.value)}
           value ={city}
         />
-        <button className="submit" 
+        <button className="searchButton" 
         onClick={() => getWeatherData(city)}
         >
           Submit

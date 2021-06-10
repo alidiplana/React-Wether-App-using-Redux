@@ -26,7 +26,7 @@ function Weather() {
 
   return (
     <div className="weather">
-      <span className="title">React Weather App</span>
+      <span className="title">React Weather App using Redux</span>
       <br />
       <WeatherInput getWeatherData={fetchWeatherData} />
 
