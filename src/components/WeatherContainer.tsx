@@ -9,28 +9,6 @@ import "./weatherContainer.css";
 
 const API_KEY: String = "72286ce12d54b7b4c80ee1f25861e9a1";
 
-type Prop = {
-  data: {
-    cod: number;
-    name: String;
-    dt: number;
-    id: number;
-    main: {
-      humidity: number;
-      pressure: number;
-      temp: number;
-      temp_min: number;
-      temp_max: number;
-    };
-    sys: { country: String; temp_max: number; temp_min: number };
-    timezone: number;
-    visibility: number;
-    weather: [{ description: String; icon: String; main: String }];
-    wind: { deg: number; speed: number };
-    message: String;
-  };
-};
-
 function Weather() {
   const dispatch = useDispatch<AppDispatch>();
   const weather = useSelector<RootState>((state) => state.weather.weather);
